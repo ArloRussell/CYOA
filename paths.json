@@ -1,13 +1,32 @@
 {
     "paths":[
         {
-            "title": "opener",
+            "title": "Opener",
             "textBox": [
                 "Kanata was once a commander in his home's military and fought in a war many years ago.", 
-                "During this war, he fought a man named Rhyes, a commander for the other side. Kanata won against him in a duel, leaving him the only one standing."
+                "During this war, he fought a man named Rhyes, a commander for the other side. Kanata won against him in a duel, leaving him the only one standing.",
+                "When he returned, he started seeing Rhyes around him. He were being haunted by him, and Rhyes is not a quiet man.",
+                "In the years since, he has grown acustomed to Rhyes'...company and lack of 'off switch' but Kanata has never responded to him."
             ],
             "options": [
-                "Continue"
+                {
+                    "text": "Continue",
+                    "next": 1
+                }
+            ]
+        },
+        {
+            "title": "Begin",
+            "textBox": [
+                "Kanata moved around his small village home, making breakfast, cleaning up a bit, the basic morning tasks",
+                "As he did this, he could see Rhyes move in and out of his vision as he looked around Kanata's home",
+                "He seems to always be interested in the devices and knick knacks Kanata had around his kitchen and often asks queations about them"
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "next": 2
+                }
             ]
         }
     ]

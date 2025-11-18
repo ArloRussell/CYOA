@@ -1,12 +1,9 @@
 const textBoxText = document.getElementById("text-box-text");
-const option1 = document.getElementById("option-1");
-const option2 = document.getElementById("option-2");
-const option3 = document.getElementById("option-3");
-const option4 = document.getElementById("option-4");
-const option1Text = document.getElementById("option-1-text");
-const option2Text = document.getElementById("option-2-text");
-const option3Text = document.getElementById("option-3-text");
-const option4Text = document.getElementById("option-4-text");
+const option = document.getElementsByClassName("option");
+const title = document.getElementById("title");
+const menu = document.getElementById("menu-row");
+let textIndex = 0;
+let pathIndex = 0;
 
 async function getPaths(){
     const response = await fetch('paths.json');
@@ -20,15 +17,70 @@ getPaths().then(paths => {
 })
 
 function main(data) {
-    textBoxText.innerText = data.paths[0].textBox[0];
+    title.innerText = data.paths[pathIndex].title;
+    textBoxText.innerText = data.paths[pathIndex].textBox[textIndex];
+    menu.innerHTML = makeOptions(data.paths[pathIndex].options);
 
     console.log(data.paths[0].options.length);
     for(let i = 0; i < data.paths[0].options.length; i++){
-        
+        option[i].classList.remove("hidden");
     }
 
-    option1Text.innerText = data.paths[0].options[0];
-    option2Text.innerText = data.paths[0].options[1];
-    option3Text.innerText = data.paths[0].options[2];
-    option4Text.innerText = data.paths[0].options[3];
+    buttonClick(data);
+}
+
+function buttonClick(data){
+    for(let i = 0; i < option.length; i++){
+        option[i].addEventListener("click", function(){
+            if(data.paths[pathIndex].textBox.length-1 === textIndex){
+                changePath(data, i)
+            }else{
+                changeText(data);
+            }
+            console.log(`length: ${data.paths[pathIndex].textBox.length-1}`);
+            console.log(`text index: ${textIndex}`);
+        })
+    }
+}
+
+function changeText(data){
+    textIndex += 1;
+    fillTextBox(data);
+}
+
+function changePath(data, button){
+    pathIndex = data.paths[pathIndex].options[button].next;
+    if(pathIndex > data.paths.length-1){
+        alert(`That's as much as written`);
+        return
+    }
+    console.log(`path index: ${pathIndex}`);
+    console.log(`path title: ${data.paths[pathIndex].title}`)
+    console.log(`button: ${button}`);
+    textIndex = 0;
+    changeTitle(data);
+    fillTextBox(data);
+}
+
+function fillTextBox(data){
+    textBoxText.innerText = data.paths[pathIndex].textBox[textIndex]
+}
+
+function changeTitle(data){
+    title.innerText = data.paths[pathIndex].title;
+}
+
+function makeOptions(options){
+    let markup = "";
+    for(o of options){
+        markup += `
+            <div class="col px-2 d-flex align-items-center justify-content-center">
+                <div class="option hidden card p-2 rounded-0 justify-content-center">
+                    <p class="m-0 text-center">${o.text}</p>
+                </div>
+            </div>
+            `
+    };
+    console.log(markup);
+    return markup;
 }
