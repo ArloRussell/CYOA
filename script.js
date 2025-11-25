@@ -2,6 +2,8 @@ const textBoxText = document.getElementById("text-box-text");
 const option = document.getElementsByClassName("option");
 const title = document.getElementById("title");
 const menu = document.getElementById("menu-row");
+const kanata = document.getElementById("Kanata");
+const Ryhes = document.getElementById("Ryhes");
 let textIndex = 0;
 let pathIndex = 0;
 
@@ -18,7 +20,7 @@ getPaths().then(paths => {
 
 function main(data) {
     title.innerText = data.paths[pathIndex].title;
-    textBoxText.innerText = data.paths[pathIndex].textBox[textIndex];
+    fillTextBox(data);
     makeButtons(data);
     console.log(data.paths[0].options.length);
 }
@@ -26,10 +28,9 @@ function main(data) {
 function buttonClick(data){
     for(let i = 0; i < option.length; i++){
         option[i].addEventListener("click", function(){
-            console.log(`i: ${i}`)
-            console.log(`i index: ${data.paths[pathIndex].options[i].index}`);
+            console.log(option[i].getAttribute('id'));
             if(data.paths[pathIndex].textBox.length-1 === textIndex){
-                changePath(data, i)
+                changePath(data, option[i].getAttribute('id'))
             }else{
                 changeText(data);
             }
@@ -45,8 +46,13 @@ function changeText(data){
 function changePath(data, button){
     console.log(`path index: ${pathIndex}`);
     console.log(`button: ${button}`);
-    console.log(`next: ${data.paths[pathIndex].options[button].next}`)
-    pathIndex = data.paths[pathIndex].options[button].next;
+    if(button === null){
+        console.log(`next: ${data.paths[pathIndex].options[0].next}`);
+        pathIndex = data.paths[pathIndex].options[0].next;
+    }else{
+        console.log(`next: ${data.paths[pathIndex].options[button].next}`);
+        pathIndex = data.paths[pathIndex].options[button].next;
+    }
     if(pathIndex > data.paths.length-1){
         alert(`That's as much as written`);
         return
@@ -60,7 +66,14 @@ function changePath(data, button){
 }
 
 function fillTextBox(data){
-    textBoxText.innerText = data.paths[pathIndex].textBox[textIndex];
+    let textBox = data.paths[pathIndex].textBox[textIndex];
+    textBoxText.innerHTML = textBox.text;
+    console.log(textBox.kanataMouth);
+    if(textBox.kanataMouth === 'open'){
+        kanata.classList.add("open");
+    }else if(textBox.kanataMouth === 'close'){
+        kanata.classList.remove("open");
+    }
     makeButtons(data);
 }
 
@@ -74,15 +87,15 @@ function makeOptions(options){
         if(textIndex === o.timer && o.timer != 0){
             console.log(o);
             markup += `
-            <div class="col px-2 d-flex align-items-center justify-content-center">
-            <div class="option card p-2 rounded-0 justify-content-center">
-            <p class="m-0 text-center">${o.text}</p>
-            </div>
+            <div id="${o.index}" class="option card p-2 rounded-0 justify-content-center">
+                    <p class="m-0 text-center">${o.text}</p>
+                </div>
             </div>
             `        
         }else if(o.timer === 0 && o.leave != textIndex){
+            console.log(o);
             markup += `
-                <div class="col px-2 d-flex align-items-center justify-content-center">
+                <div id="${o.index}" class="col px-2 d-flex align-items-center justify-content-center">
                     <div class="option card p-2 rounded-0 justify-content-center">
                         <p class="m-0 text-center">${o.text}</p>
                     </div>

@@ -4,10 +4,26 @@
             "index": 0,
             "title": "Opener",
             "textBox": [
-                "Kanata was once a commander in his home's military and fought in a war many years ago.", 
-                "During this war, he fought a man named Rhyes, a commander for the other side. Kanata won against him in a duel, leaving him the only one standing.",
-                "When he returned, he started seeing Rhyes around him. He were being haunted by him, and Rhyes is not a quiet man.",
-                "In the years since, he has grown acustomed to Rhyes'...company and lack of 'off switch' but Kanata has never responded to him."
+                {
+                    "text": "Kanata was once a commander in his home's military and fought in a war many years ago.",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                }, 
+                {
+                    "text": "During this war, he fought a man named Rhyes, a commander for the other side. Kanata won against him in a duel, leaving him the only one standing.",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text": "When he returned, he started seeing Rhyes around him. He were being haunted by him, and Rhyes is not a quiet man.",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text":"In the years since, he has grown acustomed to Rhyes'...company and lack of 'off switch' but Kanata has never responded to him.",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                }
             ],
             "options": [
                 {
@@ -22,12 +38,36 @@
             "index": 1,
             "title": "Begin",
             "textBox": [
-                "Kanata moved around his small village home, making breakfast, cleaning up a bit, the basic morning tasks",
-                "As he did this, he could see Rhyes move in and out of his vision as he looked around Kanata's home",
-                "He seems to always be interested in the devices and knick knacks Kanata had around his kitchen and often asks queations about them",
-                "\"Hey!\" He calls out to get Kanata's attention, \"What's this?\"",
-                "Kanata looked over and saw that Rhyes' was pointing a small scuplture of a cat on a shelf",
-                "Does he answer Rhyes?"
+                {
+                    "text": "Kanata moved around his small village home, making breakfast, cleaning up a bit, the basic morning tasks",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text": "As he did this, he could see Rhyes move in and out of his vision as he looked around Kanata's home",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text": "He seems to always be interested in the devices and knick knacks Kanata had around his kitchen and often asks queations about them",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text": "<span class=\"ryhes-text\">\"Hey!\"</span> He calls out to get Kanata's attention, <span class=\"ryhes-text\">\"What's this?\"</span>",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "open"
+                },
+                {
+                    "text": "Kanata looked over and saw that Rhyes' was pointing a small scuplture of a cat on a shelf",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                },
+                {
+                    "text": "Does he answer Rhyes?",
+                    "kanataMouth": "close",
+                    "ryhesMouth:": "close"
+                }
             ],
             "options": [
                 {
@@ -54,7 +94,11 @@
             "index": 2,
             "title": "Answer",
             "textBox": [
-                "\"It's a sculpture one of my soldiers made during our down time.\"",
+                {
+                    "text": "<span class=\"kanata-text\">\"It's a sculpture one of my soldiers made during our down time.\"</span>",
+                    "kanataMouth": "open",
+                    "ryhesMouth": "close"
+                },
                 "The ghost jumped at the sound of Kanata's voice, having not expected an answer.",
                 "He smiled and continued his idle chatter and asking more quetions, not caring if he got an answer or not.",
                 "During this, Kanata cought a mention of wanting to go to the forest nearby. Something about animals and plants",
@@ -63,7 +107,21 @@
             "options": [
                 {
                     "text": "Continue",
-                    "timer": 0
+                    "index": 0,
+                    "timer": 0,
+                    "leave": 4
+                },
+                {
+                    "text": "Agree",
+                    "index": 1,
+                    "timer": 4,
+                    "next": 4
+                },
+                {
+                    "text": "Ignore",
+                    "index": 2,
+                    "timer": 4,
+                    "next": 5
                 }
             ]
         },
@@ -78,6 +136,21 @@
             "options": [
                 {
                     "text": "Continue",
+                    "timer": 0
+                }
+            ]
+        },
+        {
+            "index": 4,
+            "title": "Forest",
+            "textBox": [
+                "You grab your coat from next to the door and leave towards the forest.",
+                "Rhyes smiles at you and you notice that he seems to bounce as he 'walks' with you."
+            ],
+            "options": [
+                {
+                    "text": "Continue",
+                    "index": 0,
                     "timer": 0
                 }
             ]
