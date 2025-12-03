@@ -8,6 +8,6 @@ Images are temporary for the moment until I can find the time to go more in dept
 ## Characters:
 The Main features are Kanata & Ryhes, who can be found on my Toyhou.se:
 
-Kanata - [https://toyhou.se/23429544.kanata]
+Kanata - https://toyhou.se/23429544.kanata
 
-Ryhes - [https://toyhou.se/23877372.rhyes]
+Ryhes - https://toyhou.se/23877372.rhyes
