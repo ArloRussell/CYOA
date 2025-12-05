@@ -65,14 +65,22 @@ function changePath(data, button){
 function fillTextBox(data){
     let textBox = data.paths[pathIndex].textBox[textIndex];
     textBoxText.innerHTML = textBox.text;
-    if(textBox.kanataMouth === 'open'){
+    kanata.classList.remove('open');
+    kanata.classList.remove('right');
+    if(textBox.kanataImg === 'center-open'){
         kanata.classList.add("open");
-    }else if(textBox.kanataMouth === 'close'){
+    }else if(textBox.kanataImg === 'center-close'){
         kanata.classList.remove("open");
+    }else if(textBox.kanataImg === 'right-open'){
+        kanata.classList.add("right");
+        kanata.classList.add("open");
+    }else if(textBox.kanataImg === 'right-close'){
+        kanata.classList.add('right');
     }
-    if(textBox.ryhesMouth === 'open'){
+
+    if(textBox.ryhesImg === 'open'){
         ryhes.classList.add("open");
-    }else if(textBox.ryhesMouth === 'close'){
+    }else if(textBox.ryhesImg === 'close'){
         ryhes.classList.remove("open");
     }
     makeButtons(data);

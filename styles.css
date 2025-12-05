@@ -86,6 +86,14 @@ html, body{
     background-image: url(Kanata_Open_Temp.png);
 }
 
+#Kanata.right{
+    background-image: url(Kanata_Temp_Right.png);
+}
+
+#Kanata.right.open{
+    background-image: url(Kanata_Temp_Right_Open.png);
+}
+
 #Kanata .name-title{
     background-color: darkblue;
     color: white

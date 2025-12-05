@@ -6,23 +6,23 @@
             "textBox": [
                 {
                     "text": "Kanata was once a commander in his home's military and fought in a war many years ago.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 }, 
                 {
                     "text": "During this war, he fought a man named Rhyes, a commander for the other side. Kanata won against him in a duel, leaving him the only one standing.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "When he returned, he started seeing Rhyes around him. He were being haunted by him, and Rhyes is not a quiet man.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text":"In the years since, he has grown acustomed to Rhyes'...company and lack of 'off switch' but Kanata has never responded to him.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 }
             ],
             "options": [
@@ -40,33 +40,33 @@
             "textBox": [
                 {
                     "text": "Kanata moved around his small village home, making breakfast, cleaning up a bit, the basic morning tasks",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "As he did this, he could see Rhyes move in and out of his vision as he looked around Kanata's home",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "He seems to always be interested in the devices and knick knacks Kanata had around his kitchen and often asks queations about them",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "<span class=\"ryhes-text\">\"Hey!\"</span> He calls out to get Kanata's attention, <span class=\"ryhes-text\">\"What's this?\"</span>",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "open"
+                    "kanataImg": "right-close",
+                    "ryhesImg": "open"
                 },
                 {
                     "text": "Kanata looked over and saw that Rhyes' was pointing a small scuplture of a cat on a shelf",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "right-close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "Does he answer Rhyes?",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 }
             ],
             "options": [
@@ -96,28 +96,28 @@
             "textBox": [
                 {
                     "text": "<span class=\"kanata-text\">\"It's a sculpture one of my soldiers made during our down time.\"</span>",
-                    "kanataMouth": "open",
-                    "ryhesMouth": "close"
+                    "kanataImg": "right-open",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "The ghost jumped at the sound of Kanata's voice, having not expected an answer.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "right-close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "He smiled and continued his idle chatter and asking more quetions, not caring if he got an answer or not.",
-                    "kanataMouth":"close",
-                    "ryhesMouth":"close"
+                    "kanataImg":"close",
+                    "ryhesImg":"close"
                 },
                 {
                     "text": "During this, Kanata cought a mention of wanting to go to the forest nearby. Something about animals and plants",
-                    "kanataMouth":"close",
-                    "ryhesMouth":"close"
+                    "kanataImg":"close",
+                    "ryhesImg":"close"
                 },
                 {
                     "text": "Does he go to forest as the ghost wants?",
-                    "kanataMouth":"close",
-                    "ryhesMouth":"close"
+                    "kanataImg":"close",
+                    "ryhesImg":"close"
                 }
             ],
             "options": [
@@ -147,18 +147,18 @@
             "textBox": [
                 {
                     "text": "The ghost isn't surprised by his silence and continues looking around the kitchen.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "He does ask about other things on the shelves but Kanata don't answer him.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "Does Kanata go to the forest for a walk or to the market for food?",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 }
             ],
             "options": [
@@ -188,33 +188,33 @@
             "textBox": [
                 {
                     "text": "He grabs his coat from next to the door and leave towards the forest.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "Rhyes smiles at him, and Kanata notices that the ghost seems to bounce as he 'walks' with him.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "The ghost moves along the trail in a zig-zag manner, looking at the different plants along the forest floor.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "Suddently, he grabs Kanata by the hand and pulls him over to a small plant with tall yellow-ish green stalks.",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 },
                 {
                     "text": "<span class=\"ryhes-text\">\"Look, this one helps with inflamation around things like stings and bites.\"</span> He points at the leaves around the bottom of the plant, <span class=\"ryhes-text\">\"What do you call it&mdash;if you know?\"</span>",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "open"
+                    "kanataImg": "close",
+                    "ryhesImg": "open"
                 },
                 {
                     "text": "Does Kanata answer?",
-                    "kanataMouth": "close",
-                    "ryhesMouth": "close"
+                    "kanataImg": "close",
+                    "ryhesImg": "close"
                 }
             ],
             "options": [
