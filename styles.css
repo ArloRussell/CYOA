@@ -62,10 +62,18 @@ html, body{
     height: 400px;
 }
 
-#center{
-    background-image: url('https://i.pinimg.com/736x/76/e0/fd/76e0fd3ef836d99e3e6ec4a4fa7b7b02.jpg');
-    background-size: cover;
-    background-position: center;
+#center, #protag, #other{
+    background-image: url(images/Game_BG_Kitchen.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#center.kitchen, #protag.kitchen, #other.kitchen{
+    background-image: url(images/Game_BG_Kitchen.png);
+}
+
+#center.forest, #protag.forest, #other.forest{
+    background-image: url(images/Game_BG.png);
 }
 
 #text-box{
@@ -75,10 +83,10 @@ html, body{
 }
 
 #Kanata{
-    background-color: lightblue;
     background-image: url(images/Kanata_Temp.png);
-    background-size: cover;
-    background-position: center;
+    background-size: 240%;
+    background-position-x: center;
+    background-position-y: 100%;
     background-repeat: no-repeat;
 }
 
@@ -100,10 +108,10 @@ html, body{
 }
 
 #Ryhes{
-    background-color: darkgreen;
     background-image: url(images/Ryhes_Temp.png);
-    background-size: cover;
-    background-position: center;
+    background-size: 240%;
+    background-position-x: center;
+    background-position-y: 100%;
     background-repeat: no-repeat;
 }
 
